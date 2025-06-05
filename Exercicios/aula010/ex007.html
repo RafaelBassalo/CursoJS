@@ -17,9 +17,74 @@
             font: normal 12pt Arial;
             margin-top: 20px;
         }
+        h1 {
+            font: bold 20pt Arial;
+            color: #333;
+        }
+        input[type=button] {
+            font: bold 12pt Arial;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        input[type=button]:hover {
+            background-color: #48dae7;
+        }
+        input[type=number] {
+            margin-right: 10px;
+        }
+        input[type=number]:focus {
+            border: 2px solid #4CAF50;
+            outline: none;
+        }
+        input[type=number]::placeholder {
+            color: #999;
+        }
+        input[type=number]:invalid {
+            border: 2px solid red;
+        }
+        input[type=number]:valid {
+            border: 2px solid green;
+        }
+        input[type=number]:disabled {
+            background-color: #f0f0f0;
+            cursor: not-allowed;
+        }
+        input[type=number]:disabled:hover {
+            background-color: #f0f0f0;
+        }
+        input[type=button]:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        input[type=button]:disabled:hover {
+            background-color: #ccc;
+        }
+        input[type=button]:active {
+            background-color: #a910d4;
+        }
+        input[type=button]:focus {
+            outline: none;
+            box-shadow: 0 0 5px #0c16d6;
+        }
+        input[type=button]:focus:hover {
+            background-color: #48dae7;
+        }
+        input[type=button]:focus:active {
+            background-color: #a910d4;
+        }
+        
+
+
+
+
+
     </style>
 </head>
 <body>
+
     <h1>Somando Valores</h1>
     <input type="number" name="txtn1" id="txtn1">
     <input type="number" name="txtn2" id="txtn2">
@@ -37,5 +102,6 @@
             res.innerText = `A soma entre ${n1} e ${n2} é  igual a ${s}`
         }
     </script>
+  
 </body>
 </html>
